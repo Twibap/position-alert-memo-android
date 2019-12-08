@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro_title">PlacePicker Sample</string>
+
+    <string name="pick_title">알림 장소</string>
+    <string name="pick_text">위치를 선택하면 해당 위치에 접근할 때 또는 벗어날 때 알람이 울리게 됩니다.
+    </string>
+    <string name="pick_action">Pick a place</string>
+
+    <!--<string name="detail_text">Place id: %1$s\nAddress: %2$s\nPhone: %3$s\n\n%4$s</string>-->
+    <string name="detail_text">%1$s</string>
+
+    <string name="empty"></string>
+</resources>

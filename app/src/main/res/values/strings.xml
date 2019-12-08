@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">My Memo Alam Application</string>
+
+    <string name="google_map_key">AIzaSyBYLzCTnpzeNLYYoaFvdIiAe4mOq6j-KK8</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <string name="edit_memo_title">제목을 입력하세요.(필수사항)</string>
+    <string name="edit_memo_location">Location</string>
+    <string name="edit_memo_range">Range</string>
+    <string name="edit_memo_contents">Contents</string>
+
+    <string name="print_folders">Folders</string>
+
+    <string name="place_details">
+    <![CDATA[
+        Address: %3$s
+    ]]>
+    </string>
+
+    <!-- EditMemoActivity -->
+    <string name="default_place_details">미 지정 시 현재위치가 저장됩니다.</string>
+    <string name="default_place_title">알람 장소 지정</string>
+
+    <string name="edit_memo_inbound">갈 때</string>
+    <string name="edit_memo_outbound">떠날 때</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_alert_start">알람 시작</string>
+    <string name="nav_alert_end">알람 끝</string>
+    <string name="nav_setting">Setting</string>
+
+    <!-- item_memo -->
+    <string name="item_title">Title</string>
+    <string name="item_location">Location</string>
+    <string name="item_timestamp">TimeStamp</string>
+    <string name="item_distance">Distance</string>
+
+    <!-- Geofence Action strings -->
+    <string name="geofences_added">Geofences added</string>
+    <string name="geofences_removed">Geofences removed</string>
+
+    <!-- Geofence Error strings -->
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <!-- Geofence Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+
+    <string name="geofence_transition_notification_text">
+        Click notification to return to app
+    </string>
+
+    <string name="insufficient_permissions">Insufficient permissions.</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="button_notification_complete">완료</string>
+    <string name="button_notification_edit">보기</string>
+    <string name="button_notification_snooze">나중에</string>
+
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- 정렬 -->
+    <string name="action_sort">sort</string>
+    <string name="sort_by_time_asc">시간 오름 순 정렬</string>
+    <string name="sort_by_time_desc">시간 내림 순 정렬</string>
+    <string name="sort_by_range_asc">거리 오름 순 정렬</string>
+    <string name="sort_by_range_desc">거리 오름 순 정렬</string>
+    <string name="sort_by_title_asc">제목 오름 순 정렬</string>
+    <string name="sort_by_title_desc">제목 오름 순 정렬</string>
+    <string name="title_activity_edit_folder">EditFolderActivity</string>
+</resources>

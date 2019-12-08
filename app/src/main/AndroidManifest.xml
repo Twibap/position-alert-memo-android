@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.iptime.twd.mymemoalamapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".BaseApplication"
+        android:theme="@style/AppTheme.NoActionBar">
+        <service android:name=".geofence.GeofenceTransitionsIntentService"/>
+
+        <!-- Google Maps Api Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key"/>
+
+        <!-- 메모 목록 화면 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.CustomActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 메모 추가/수정 화면 -->
+        <activity
+            android:name=".edit.memo.EditMemoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <!-- 위치 알람 Receiver -->
+        <receiver
+            android:name=".NotificationActionButtonReceiver"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+        </activity>
+        <activity
+            android:name=".edit.folder.EditFolderActivity"
+            android:label="@string/title_activity_edit_folder"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".map.MemoMapActivity">
+        </activity>
+
+        <service
+            android:name=".geofence.GeofenceAlertService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>

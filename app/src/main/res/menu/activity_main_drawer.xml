@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_view_map"
+        android:icon="@drawable/ic_nav_map"
+        android:title="지도 보기"
+        />
+
+    <item
+        android:id="@+id/nav_folders"
+        android:title="@string/print_folders">
+        <menu>
+            <item
+                android:id="@+id/nav_folder_all"
+                android:icon="@drawable/ic_nav_folder_filled"
+                android:title="전체보기"
+                />
+            <item
+                android:id="@+id/nav_folder_complete"
+                android:icon="@drawable/ic_nav_folder_filled"
+                android:title="완료된 메모"
+                />
+            <item
+                android:id="@+id/nav_folder_add"
+                android:icon="@drawable/ic_nav_folder_add"
+                android:title="폴더 관리"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_group_setting"
+        android:title="@string/nav_setting">
+        <menu>
+
+            <item
+                android:id="@+id/nav_alert"
+                android:icon="@drawable/ic_nav_alert_switch_off"
+                android:title="@string/nav_alert_start"
+                app:actionLayout="@layout/nav_switch_layout"
+                />
+
+            <!--<item-->
+                <!--android:id="@+id/nav_random"-->
+                <!--android:icon="@drawable/ic_nav_random"-->
+                <!--android:title="메모 생성"-->
+                <!--/>-->
+
+        </menu>
+    </item>
+
+    <!-- group template -->
+    <!--<group-->
+        <!--android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_setting"-->
+            <!--android:icon="@drawable/ic_nav_setting"-->
+            <!--android:title="Setting"/>-->
+    <!--</group>-->
+
+</menu>

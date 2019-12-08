@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 들어갈 때, 나갈 때 구별 -->
+
+        <ToggleButton
+            android:id="@+id/edit_memo_direction_inbound"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textOn="@string/edit_memo_inbound"
+            android:textOff="@string/edit_memo_inbound"
+            android:text="@string/edit_memo_inbound"/>
+
+        <ToggleButton
+            android:id="@+id/edit_memo_direction_outbound"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textOn="@string/edit_memo_outbound"
+            android:textOff="@string/edit_memo_outbound"
+            android:text="@string/edit_memo_outbound"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/print_memo_range"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:hint="@string/edit_memo_range"
+            android:labelFor="@+id/edit_memo_range"
+            android:layout_marginEnd="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:id="@+id/edit_memo_range"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

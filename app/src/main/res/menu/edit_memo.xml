@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_set_folder"
+        android:icon="@drawable/ic_action_folder"
+        android:title="폴더 설정"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/action_set_folder_all"
+                android:icon="@drawable/ic_nav_folder_filled"
+                android:title="미 분류"
+                app:showAsAction="never"
+                />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_done"
+        android:icon="@drawable/ic_action_done"
+        android:title="저장"
+        app:showAsAction="always"
+        />
+
+</menu>
